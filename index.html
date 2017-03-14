@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles/normalize.css"> <!-- 2nd priority -->
+	<link rel="stylesheet" href="styles/styles.css"> <!-- 1st priority -->
+</head>
+<body class="ba-contact-us ba-clerfix">
+	<section class="ba-contact ba-clearfix">
+		<div class="ba-container ba-clearfix">
+			<form class="ba-form ba-clearfix" action="https://formspree.io/mr.alex.2506@inbox.ru" method="POST">	
+				<h2>
+					<img src="Images/sign up icon.png" alt="key"> <b>Create your free account</h2>
+					<p>Come and join our cool and amazing community, fill in your details to get started. Already have an account? <span class="ba-form__colortext">Log in.</span>  </p>				
+					<label class="ba-form__title" for="first-name"> 
+						<input required class="ba-form__field" type="text" id="first-name" placeholder="First name">
+
+					</label>
+					<label for="email" class="ba-form__title">
+						
+						<input required type="email" class="ba-form__field" id="email" name="email" placeholder="Last name">
+
+					</label>
+					<label class="ba-form__title1" for="first-name"> 
+						<input required class="ba-form__field1" type="text" id="Email address" placeholder="Email address">
+
+					</label>
+					<label for="email" class="ba-form__title">
+						
+						<input required type="email" class="ba-form__field1" id="Password" name="email" placeholder="Password">
+
+					</label>
+					<button type="submit" class="ba-btn ba-form__btn">Sign up for free<b></button>
+					<p>By clicking on “Sign up for free”, you agree to the <span class="ba-form__colortext">Terms of Service</span> and the <span class="ba-form__colortext">Privacy Policy</span></p>
+				</form>
+			</div>
+		</section>
+		<script>
+			document.querySelectorAll('input').forEach( input => {
+				input.addEventListener('blur', (event) => {
+					event.target.classList.add('clicked');
+				});
+			});
+		</script>
+	</body>
+	</html>

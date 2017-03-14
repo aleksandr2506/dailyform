@@ -1,0 +1,134 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.ba-clearfix:before,
+.ba-clearfix:after{
+  content: '';
+  display: table;
+}
+.ba-clearfix:after{
+  clear: both;
+}
+.ba-clearfix {
+  clear: both;
+  *zoom: 1;
+}
+.ba-container{
+	width: 461px;
+	margin: 0 auto;
+}
+.ba-contact-us {
+  padding: 100px 0;
+  background-color: #E53064;
+  // background-image: url(images/main bg.jpg);
+  // background-size: 100%;
+}
+.ba-form{
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  
+  
+}
+.ba-form__title{
+  display: block;
+  margin-bottom: 35px;
+  color: #718c86;
+}
+.ba-form__field{
+  width: 192px;
+  height: 40px;
+  margin: 10px 16px 16px 0;
+  // padding-right: 4px;
+  // display: inline-block;
+  border-radius: 5px;
+  border: 2px solid #cccfd1;
+  background-color: #F0F0F0;
+  float: left;
+ 
+  
+  
+}
+.ba-form__field1 {
+  display: block;
+  width: 400px;
+  height: 40px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #cccfd1;
+  background-color: #F0F0F0;
+  
+}
+
+.ba-form__btn{
+  width: 400px;
+  height: 53px;
+  // padding: 50px 180px;
+  text-transform: uppercase;
+  background-color: #EA355A;
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid #EA355A;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: .2s ease-in;
+  transition-property: color, background-color;
+  text-align: center;
+  box-shadow: 0px 8px 10px 2px #BD1962;
+  // text-hight: 15px;
+}
+.ba-form__colortext{
+  color: red;
+  
+}
+.ba-form__btn:hover {
+  background-color: #fff;
+  color: #EA355A;
+}
+input::-moz-placeholder {
+    text-indent: 0;
+    transition: text-indent 2s ease-in-out;
+  }
+input::-moz-placeholder {
+    text-indent: 0;
+    transition: text-indent 2s ease-in-out;
+}
+input:-ms-input-placeholder {
+    text-indent: 0;
+    transition: text-indent 2s ease-in-out;
+}
+input::-webkit-input-placeholder {
+    text-indent: 0;
+    transition: text-indent 2s ease-in-out;
+}
+
+
+
+
+
+
+input:focus::-moz-placeholder {
+    text-indent: 100%;
+  }
+input:focus::-moz-placeholder {
+    text-indent: 100%;
+}
+input:focus::-ms-input-placeholder {
+    text-indent: 100%;
+}
+input:focus::-webkit-input-placeholder {
+    text-indent: 100%;
+}
+
+input.clicked:invalid {
+ border-color: red;
+}
+
+input.clicked:valid {
+ border-color: green;
+}
